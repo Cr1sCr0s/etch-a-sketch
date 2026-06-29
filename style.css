@@ -19,10 +19,10 @@ body{
   flex-flow: row wrap;
   height: 50rem;
   width: 50rem;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
 .box{
   flex: 1;
-  border: 2px solid black;
+  border: 1px solid black;
 }
