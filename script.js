@@ -24,8 +24,17 @@ function resizeGrid(gridSize, container){
     box.style.minHeight = minSize;
     box.style.minWidth = minSize;
     box.addEventListener(
-      'mouseenter', () => box.style.backgroundColor = 'black'
+      'mouseenter', () => box.style.backgroundColor = 'rgb(' 
+      + getRandomInt(0, 255) + ',' 
+      + getRandomInt(0, 255) + ',' 
+      + getRandomInt(0, 255) + ')'
     );
     container.appendChild(box);
   }
+}
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
