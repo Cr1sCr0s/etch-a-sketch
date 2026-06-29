@@ -4,9 +4,9 @@ let gridSize = 16;
 resizeGrid(gridSize, container);
 
 sizeBtn.addEventListener('click', () => {
-    gridSize = +(prompt('Enter grid size (max 100)', '16'));
+    gridSize = +(prompt('Enter grid size (min 1, max 100)', '16'));
     if(gridSize > 100) gridSize = 100;
-    if(gridSize < 0) gridSize = 3;
+    if(gridSize < 1) gridSize = 1;
     resizeGrid(gridSize, container);
   }
 );
