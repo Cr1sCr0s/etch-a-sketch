@@ -4,6 +4,7 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  gap: 16px;
 }
 
 *{
@@ -24,5 +25,4 @@ body{
 .box{
   flex: 1;
   border: 2px solid black;
-  min-width: 6.25%;
 }
